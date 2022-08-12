@@ -47,15 +47,11 @@ export const Timer = ({ focusSubject, clearSubject, onTimerEnd }) => {
         </View>
       </View>
       <View
-        style={{
-          paddingTop: spacing.sm,
-          paddingLeft: '10%',
-          paddingRight: '10%',
-        }}>
+        style={{ paddingTop: spacing.sm }}>
         <ProgressBar
           progress={progress}
           color={colors.progressBar}
-          style={{ height: spacing.md, borderRadius: '10px' }}
+          style={{ height: spacing.md }}
         />
       </View>
       <View style={styles.timingWrapper}>

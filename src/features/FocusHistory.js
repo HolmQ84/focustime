@@ -12,13 +12,10 @@ export const FocusHistory = ({history}) => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Things we've focused on:</Text>
-      <FlatList 
-        data={history}
-        renderItem={renderItem}
-      />
+      <FlatList data={history} renderItem={renderItem} />
     </View>
-  )
-}
+  );
+};
 
 const styles = StyleSheet.create ({
   container: {
@@ -36,4 +33,4 @@ const styles = StyleSheet.create ({
     fontWeight: 'bold'
   },
 
-})
+});
